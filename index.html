@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+    <script src="https://tikzjax.com/v1/tikzjax.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+    <title> TeX tikz Test Page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+
+    <script type="text/tikz">
+        \begin{tikzpicture}
+          \draw (0,0) circle (1in);
+        \end{tikzpicture}
+    </script>
+
+
+<script type="text/tikz">
+\begin{tikzpicture}
+\node[above right] at (1.5,1.5) { $ X $ };
+\fill[red,opacity=0.05] (-2,-2) rectangle (2,2);
+\draw[dashed,red ] (0,0) circle (1);
+\node[above] at (0,1) { $ \{U _ \lambda\} _ {\lambda\in\Lambda} $ };
+\draw[blue] (0,0) circle (0.75);
+
+\node at (0,0) { $ F $ };
+\node at (1,-1) { $ F ^ c $ };
+
+\draw[->] (-3,0) -- (3,0);
+\end{tikzpicture}
+
+</script>
+
+
+
+<script type="text/tikz">
+    \usetikzlibrary{intersections}
+    \begin{tikzpicture}
+    \draw[->] (-3,0) -- (3,0);
+    \draw[->] (0,-3) -- (0,3);
+
+    \node[above right] at (1,1) {$A$};
+    \node[below right] at (1,-1) {$B$ };
+    \end{tikzpicture}
+</script>
+ 
+  <p>
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+\({a+b \over 2}\)
+
+</p>
+
+</body>
+
+</html>
